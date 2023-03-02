@@ -1,0 +1,125 @@
+%form-fields {
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: 25px 10px;
+}
+%form-fields-focus {
+    font-size: 1rem;
+}
+.frm_forms {
+    .frm_pro_form {
+        .frm_form_field {
+            @media screen and (max-width: 1040px) {
+                min-height: 92px;
+            }
+            @media screen and (max-width: 600px) {
+                min-height: auto;
+            }
+            label {
+                color: $viridian_green;
+                font-family: $font-family-isidora;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            :invalid {
+                @extend %form-fields;
+            }
+        }
+        input[type=text] {
+            @extend %form-fields;
+            &:focus {
+                @extend %form-fields-focus;
+            }
+        }
+        input[type=tel] {
+            @extend %form-fields;
+            &:focus {
+                @extend %form-fields-focus;
+            }
+        }
+        input[type=email] {
+            @extend %form-fields;
+            &:focus {
+                @extend %form-fields-focus;
+            }
+        }
+        select {
+            height: 60px;
+            line-height: 60px;
+            &:focus {
+                @extend %form-fields-focus;
+            }
+        }
+        textarea {
+            @extend %form-fields;
+            &:focus {
+                @extend %form-fields-focus;
+            }
+        }
+        .frm_blank_field {
+            input[type=text] {
+                @extend %form-fields;
+                &:focus {
+                    @extend %form-fields-focus;
+                }
+            }
+            input[type=tel] {
+                @extend %form-fields;
+                &:focus {
+                    @extend %form-fields-focus;
+                }
+            }
+            input[type=email] {
+                @extend %form-fields;
+                &:focus {
+                    @extend %form-fields-focus;
+                }
+            }
+            select {
+                @extend %form-fields;
+                line-height: 50px;
+                &:focus {
+                    @extend %form-fields-focus;
+                }
+            }
+            textarea {
+                @extend %form-fields;
+                &:focus {
+                    @extend %form-fields-focus;
+                }
+            }
+        }
+        .frm_error {
+            color: $white;
+            padding: 10px;
+        }
+        .frm_submit {
+            button {
+                @extend .btn;
+                @extend .btn-primary;
+                font-family: $font-family-isidora-alt;
+                font-size: 13px;
+                font-weight: 700;
+                padding: 24px 48px 22px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                @media screen and (max-width: 1040px) {
+                    min-height: 92px;
+                }
+                @media screen and (max-width: 600px) {
+                    min-height: auto;
+                }
+            }
+            .frm-reset {
+                color: $prussian_blue;
+                font-family: $font-family-isidora;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 40px;
+                letter-spacing: 1px;
+                margin-left: 45px;
+                text-decoration: underline;
+            }
+        }
+    }
+}

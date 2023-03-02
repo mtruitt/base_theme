@@ -1,0 +1,19 @@
+{
+    "browserSyncOptions": {
+        "proxy": "bootstrap-components.local",
+        "notify": true,
+        "browser": ["chrome"]
+    },
+    "browserSyncWatchFiles": [
+        "./**/*.php",
+        "./images/*.{png,jpg,gif}"
+    ],
+    "paths": {
+        "js": "./js",
+        "css": "./css",
+        "adminColors" : "./admin-colors/strategicfactory",
+        "img": "./img",
+        "sass": "./sass",
+        "node": "./node_modules/"
+    }
+}

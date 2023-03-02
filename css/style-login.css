@@ -1,0 +1,21 @@
+body.login div#login h1 a {
+    background-image: url("images/logo.png");
+    background-size: contain;
+    height:60px;
+    width:100%;
+}
+body.login #login_error, body.login .message, body.login .success {
+    border-left-color: #f6911e;
+}
+
+body.login .button-primary {
+    background:  #00a8d5;
+    border-color: #00a8d5 #00a8d5 #00a8d5;
+    box-shadow: 0 1px 0 #00a8d5;
+    text-shadow: none;
+}
+body.login .button-primary:hover {
+    background: #f6911e;
+    border-color: #f6911e;
+    box-shadow: 0 1px 0 #f6911e;
+}

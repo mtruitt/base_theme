@@ -1,0 +1,50 @@
+// Colors
+$color-primary: #236476;
+$color-secondary: #7baf3d;
+$dark: #1a4956;
+$pale: #cfe0da;
+$white: #ffffff;
+$body-color: #000000;
+
+// General Styles
+$font-primary: 'Montserrat', sans-serif;
+//$font-headings: 'Isidora', sans-serif;
+
+/* Example of how to set multiple font-face for manual fonts
+@font-face {
+    font-family: 'Isidora';
+    src: url("/wp-content/themes/cgcc-theme/fonts/isidora-black.woff") format("woff");
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Isidora';
+    src: url("/wp-content/themes/cgcc-theme/fonts/isidora-bold.woff") format("woff");
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Isidora';
+    src: url("/wp-content/themes/cgcc-theme/fonts/isidora-light.woff") format("woff");
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Isidora';
+    src: url("/wp-content/themes/cgcc-theme/fonts/isidora-semibold.woff") format("woff");
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Isidora';
+    src: url("/wp-content/themes/cgcc-theme/fonts/isidora-regular.woff") format("woff");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Isidora Alt';
+    src: url("/wp-content/themes/cgcc-theme/fonts/isidoraalt-bold.woff") format("woff");
+    font-weight: 700;
+}
+*/
+
+// Theme overrides
+$theme-colors: (
+        "primary": $color-primary,
+        "secondary": $color-secondary,
+);
